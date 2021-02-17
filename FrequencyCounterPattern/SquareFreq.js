@@ -1,5 +1,5 @@
 // Write a function called same, which accepts two arrays. The fucntion should return true if every value in the array has
-// it's corresponding value squared in the second array. The frequency of values must be the same.  
+// it's corresponding value squared in the second array. The frequency of values must be the same.
 
 // Examples
 // 1> [1, 2, 3], [ 4, 1, 9] // true
@@ -10,6 +10,7 @@
 const arrayNum = [5, 2, 2, 3, 1];
 const arraySquare = [4, 1, 9, 4, 25];
 
+//O(n)
 const areSameMySol = (nums, squares) => {
   if (nums.length !== squares.length) return false;
 
@@ -34,6 +35,7 @@ const areSameMySol = (nums, squares) => {
   return areArrSame;
 };
 
+// O(n^2)
 const areSameCourseFirst = (nums, squares) => {
   if (nums.length !== squares.length) return false;
 

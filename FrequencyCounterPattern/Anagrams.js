@@ -3,7 +3,7 @@
 // rearranging the letters of another, such as cinema, formed from iceman
 
 // Solutions
-
+// O(n)
 const validAnagramMySol = (first, second) => {
   if (first.length !== second.length) return false;
   let counterFirst = {};
@@ -25,6 +25,7 @@ const validAnagramMySol = (first, second) => {
   return isValid;
 };
 
+// O(n)
 const validAnagram = (first, second) => {
   if (first.length !== second.length) return false;
   let lookup = {};

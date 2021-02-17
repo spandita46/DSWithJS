@@ -5,6 +5,7 @@
 // but it will be sorted.
 
 // Solutions
+// O(n)
 const countUniqueValues_MS = (sortedNums) => {
   let count = sortedNums.length ? 1 : 0;
   let left = 0;
@@ -21,6 +22,7 @@ const countUniqueValues_MS = (sortedNums) => {
   return count;
 };
 
+// O(n)
 const countUniqueValues = (sortedNums) => {
   if (!sortedNums.length) return 0;
 
