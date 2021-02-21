@@ -34,7 +34,7 @@ console.log(maxSubArraySum_MS([1, 2, 5, 2, 8, 1, 5], 4)); //17
 console.log(maxSubArraySum_MS([], 4)); //null
 
 console.log('Course Solution');
-// Test Cases
+//  O(n)
 const maxSubArraySum = (numArr, num) => {
   let greatestSum = 0;
   let tempRangeSum = 0;
@@ -60,6 +60,8 @@ const maxSubArraySum = (numArr, num) => {
 
   return greatestSum;
 };
+
+// Test Cases
 console.log(maxSubArraySum([1, 1, 1, 1, 2], 2)); //3
 console.log(maxSubArraySum([9, 8, 1, 3, 7, 16, 2], 3)); //26
 console.log(maxSubArraySum([1, 2, 5, 2, 8, 1, 5], 2)); //10
